@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/black white simple podcast logo.png">
+    <title>Tfash | Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><img src="../img/logo.png" alt=""></a>
+
+        <ul class="navmenu">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li><a href="../html/sale.html">Sale</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="../html/login.html" class="lg">Login</a>
+            <a href="../html/signup.html" class="lg">Sign Up</a>
+            <a href="../html/cart.html" class="carticon">
+                <i class='bx bx-cart'></i>
+                <h5 class="cartNo">0</h5>
+            </a>
+        </div>
+    </header>
+
+    <section class="trending-prodict" id="trending">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span></h2>
+        </div>
+
+        <div class="products">
+            <div class="row">
+                <img src="../img/1.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Black Athleisure Set</h4>
+                    <p>$99</p>
+                </div>
+                <button class="cart" onclick="addCart({ image: 'link_to_image', title: 'Black Athleisure Set', price: '$99' });">
+                    <i class='bx bx-cart'></i>Add to cart
+                </button>
+            </div>
+
+            <div class="row">
+                <img src="../img/2.jpg" alt="">
+                <div class="product-text">
+                    <h5>New</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Edgy Urban Outfit</h4>
+                    <p>$129</p>
+                </div>
+                <button class="cart" onclick="addCart();"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+
+            <div class="row">
+                <img src="../img/3.jpg" alt="">
+               
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Modern Streetwear Set</h4>
+                    <p>$159</p>
+                </div>
+                <button class="cart"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+
+            <div class="row">
+                <img src="../img/4.jpg" alt="">
+                <div class="product-text">
+                    <h5>Hot</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Pastel Athleisure Set</h4>
+                    <p>$199</p>
+                </div>
+                <button class="cart"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+
+            <div class="row">
+                <img src="../img/5.jpg" alt="">
+            
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Athletic Chic Outfit</h4>
+                    <p>$129</p>
+                </div>
+                <button class="cart"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+
+            <div class="row">
+                <img src="../img/6.jpg" alt="">
+                <div class="product-text">
+                    <h5>Hot</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Fancy Sport Set</h4>
+                    <p>$199</p>
+                </div>
+                <button class="cart"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+
+            <div class="row">
+                <img src="../img/7.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>White Set</h4>
+                    <p>$99</p>
+                </div>
+                <button class="cart"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+
+            <div class="row">
+                <img src="../img/8.jpg" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart' ></i>
+                </div>
+                <div class="ratting">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Edgy Streetwear Set</h4>
+                    <p>$99</p>
+                </div>
+                <button class="cart"><i class='bx bx-cart'></i>Add to cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="client-reviews">
+        <div class="reviews">
+            <h3>Client Reviews</h3>
+            <img src="../img/client.jpg" alt="">
+            <p>I recently purchased a pair of high-waisted jeans from Tfash, and I couldn't be happier! The fit is perfect; they hug my curves without feeling restrictive. The denim is soft yet durable, and I love the deep blue color. I wore them out last weekend and received several compliments. The only downside is that they are a bit long, but I can easily get them hemmed. Overall, I highly recommend these jeans!</p>
+
+            <h2>Rose</h2>
+            <p>CEO of Addle</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="../img/logo.png" alt="">
+
+                <p>Go Vap Ho Chi Minh City <br> Viet Nam</p>
+                <p>0384207143</p>
+                <p>nguyenthianhthy2810@gmail.com</p>
+
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-gmail'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+
+                </div>
+            </div>
+
+            <div class="second-info">
+                <h4>Support</h4>
+                <p><a href="../html/contact.html">Contact Us</a></p>
+                <p><a href="../html/about.html">About page</a></p>
+                <p>Privacy</p>
+
+            </div>
+
+            <div class="third-info">
+                <h4>Shop</h4>
+                <p><a href="../html/shop.html">Shop</a></p>
+                <p><a href="../html/sale.html"></a>Discount</p>
+            </div>
+
+            <div class="fourth-info">
+                <h4>Company</h4>
+                <p><a href="../html/about.html">About</a></p>
+                <p><a href="../html/login.html">Login</a></p>
+                <p><a href="../html/signup.html">Sign Up</a></p>
+            </div>
+
+            <div class="five">
+                <h4>Subscribe</h4>
+                <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eum, Debitis.</p>
+                <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/java.js"></script>
+</body>
+</html>

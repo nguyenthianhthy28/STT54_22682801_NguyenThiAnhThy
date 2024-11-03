@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/black white simple podcast logo.png">
+    <title>Tfash | Payment</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<style>
+    .container{
+    position: relative;
+    top: 150px;
+    width: 400px;
+    margin-left: 40%;
+    margin-bottom: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    }
+    .container h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .payment-method h3{
+        text-decoration: none;
+    }
+    .payment-method input,
+    .payment-method select {
+        width: 100%; 
+        padding: 8px; 
+        margin-bottom: 15px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+    }
+
+    .payment-method button {
+        width: 100%; 
+        padding: 10px;
+        background-color: #000000;
+        color: white; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer;
+    }
+
+    .payment-method button:hover {
+        background-color: #ffffff;
+    color: #000;
+    border: 1px solid black; 
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="../img/logo.png" alt=""></a>
+
+        <ul class="navmenu">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/shop.html">Shop</a></li>
+            <li><a href="../html/sale.html">Sale</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="../html/login.html" class="lg">Login</a>
+            <a href="../html/signup.html" class="lg">Sign Up</a>
+            <a href="../html/cart.html" class="carticon">
+                <i class='bx bx-cart'></i>
+                <h5 class="cartNo">0</h5>
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Payment</h1>
+        <div class="order-summary">
+            <div id="payment-info"></div>
+            <div class="total">
+                <p>Total:</p>
+            </div>
+        </div>
+        <div class="payment-method">
+            <h3>Payment Method</h3>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" placeholder="Enter Card Number" required> <br>
+            
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="date" id="expiry-date" placeholder="Enter Expiry Date" required> <br>
+            
+            <label for="bank">Select Bank:</label>
+            <select id="bank" required>
+                <option value="" disabled selected>Select a bank</option>
+                <option value="bidv">BIDV</option>
+                <option value="mbbank">MB Bank</option>
+                <option value="techcombank">Techcombank</option>
+                <option value="vietcombank">Vietcombank</option>
+                <!-- Add more banks if needed -->
+            </select> <br>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required> <br>
+            
+            <button id="pay-btn">Pay</button>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="../img/logo.png" alt="">
+
+                <p>Go Vap Ho Chi Minh City <br> Viet Nam</p>
+                <p>0384207143</p>
+                <p>nguyenthianhthy2810@gmail.com</p>
+
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-gmail'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+
+                </div>
+            </div>
+
+            <div class="second-info">
+                <h4>Support</h4>
+                <p><a href="../html/contact.html">Contact Us</a></p>
+                <p><a href="../html/about.html">About page</a></p>
+                <p>Privacy</p>
+
+            </div>
+
+            <div class="third-info">
+                <h4>Shop</h4>
+                <p><a href="../html/shop.html">Shop</a></p>
+                <p><a href="../html/sale.html"></a>Discount</p>
+            </div>
+
+            <div class="fourth-info">
+                <h4>Company</h4>
+                <p><a href="../html/about.html">About</a></p>
+                <p><a href="../html/login.html">Login</a></p>
+                <p><a href="../html/signup.html">Sign Up</a></p>
+            </div>
+
+            <div class="five">
+                <h4>Subscribe</h4>
+                <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eum, Debitis.</p>
+                <p>Receive Updates, Hot Deals, Discounts Sent Straight In Your Inbox Daily</p>
+            </div>
+        </div>
+    </section>
+    <script>
+                // Process the click event for the "Pay" button
+            document.getElementById('pay-btn').addEventListener('click', function() {
+            const cardNumber = document.getElementById('card-number').value.trim();
+            const expiryDate = document.getElementById('expiry-date').value.trim();
+            const bank = document.getElementById('bank').value; // Get the selected bank
+            const name = document.getElementById('name').value.trim(); // Get the name
+
+            // Check if all fields are filled
+            if (cardNumber !== '' && expiryDate !== '' && bank !== '' && name !== '') {
+                alert('Payment successful!');
+            } else {
+                alert('Please fill in all the information.');
+            }
+        });
+
+        // Get the total amount from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const total = urlParams.get('total');
+
+        // Display the amount to be paid
+        document.getElementById('payment-info').innerText = `Amount to be paid: ${total} $`;
+        document.querySelector(".total p").innerText = `Total: ${total}$`;
+    </script>
+</body>
+</html>
